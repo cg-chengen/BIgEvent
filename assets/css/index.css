@@ -1,0 +1,69 @@
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+.iconfont {
+    margin-right: 9px;
+}
+
+.layui-nav-child {
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user_info {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.avatar_user {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #009688;
+}
+
+.nickname {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.person_center {
+    margin-left: 10px;
+}
+
+.avatar_img {
+    width: 40px;
+    height: 40px;
+}
+
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
