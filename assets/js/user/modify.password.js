@@ -11,10 +11,6 @@ $(function() {
                 return '两次密码输入不一致'
             }
         },
-
-
-
-
     })
     $('.layui-form').submit(function(e) {
         e.preventDefault();
@@ -24,7 +20,11 @@ $(function() {
                 return layer.msg('修改失败')
 
             }
-            layer.msg('修改成功')
+            layer.msg('修改成功');
+            // 修改后跳转到登录页
+            window.parent.location.href = '../login.html';
+            // 删除token
+            localStorage.removeItem('token')
         })
     })
 

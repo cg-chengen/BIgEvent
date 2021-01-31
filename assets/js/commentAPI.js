@@ -4,7 +4,7 @@ axios.interceptors.request.use(function(config) {
     // 在发送请求之前判断是否有/my开头的请求路径
     if (config.url.startsWith('/my')) {
         const token = localStorage.getItem('token') || ''
-        config.headers.Authorization = token
+        config.headers.Authorization = token;
     }
     return config;
 }, function(error) {
@@ -20,7 +20,7 @@ axios.interceptors.response.use(function(response) {
         //清除本地token
         localStorage.removeItem('token');
         //跳转登录页
-        location.href = './login.html'
+        location.href = './login.html';
     }
 
     // 对响应数据做点什么
