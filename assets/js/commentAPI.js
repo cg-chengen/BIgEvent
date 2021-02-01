@@ -16,7 +16,7 @@ axios.interceptors.request.use(function(config) {
 axios.interceptors.response.use(function(response) {
     //先判断身份验证是否成功
     const { status, message } = response.data;
-    if (message == '身份验证失败!' && status == 1) {
+    if (message == '身份认证失败！' && status == 1) {
         //清除本地token
         localStorage.removeItem('token');
         //跳转登录页
