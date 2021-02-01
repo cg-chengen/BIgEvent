@@ -76,25 +76,15 @@ $(function() {
 
     // 删除功能
     $(document).on('click', '.del_btn', function(e) {
-        // 清除默认
         e.preventDefault();
-        // 获取id
-        const id = $(this).data('id');
-        layer.confirm('确认删除?', { icon: 3, title: '提示' }, function(index) {
-            //发送请求至服务器,删除
-            axios.get(`/my/article/deletecate/${id}`).then(res => {
-                console.log(res);
-                if (res.status !== 0) {
-                    return layer.msg('删除失败!')
-                };
-                layer.msg('删除成功!');
-                // 重新渲染
-                getCateList();
-            });
-            // 关闭弹窗
-            layer.close(index);
-        });
-
+        const id = $(this).data('id')
+        axios.get(`/my/article/deletecate/${id}`).then(res => {
+            console.log(res);
+            if (res.status !== 0) {
+                return layer.msg('获取失败!')
+            };
+            getCateList();
+        })
     })
 
 
